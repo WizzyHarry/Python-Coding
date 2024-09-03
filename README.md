@@ -9,12 +9,11 @@
 *Course Work Links*
 
 1. [A1 README.md](a1/README.md "Keiths A1 README.md file")
-    - Install Git
-    - Create Bitbucket account
-    - Install Anaconda (Python and R)
-    - Install Visual Studio Code (Python)
-    - 
-    - Create an SSH
+    - Create new Bitbucket repository 
+    - Update Anaconda/Git_Bash/VS etc...
+    - Configure git push/pull setup
+    - Create tip calculator (python)
+    - Run tip calculator (IDLE, VS, Lab)
     - Answer questions (Chs. 1, 2)
 
 2. [A2 README.md](a2/README.md "Keiths A2 README.md file")

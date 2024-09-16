@@ -1,55 +1,47 @@
-> **NOTE:** This README.md file should be placed at the **root of each of your repos directories.**
->
->Also, this file **must** use Markdown syntax, and provide project documentation as per below--otherwise, points **will** be deducted.
->
 
-# Artificial Intelligence Application
+
+# Extensible Enterprise Solutions
 
 ## Keith Faunce
 
 ### Assignment 2 Requirements:
 
-**Data Analysis & Visualization Steps**
-
-1. Get Data
-2. Clean the Data
-3. Prepare the Data
-4. Analyze the Data
-5. Display the Data
-6. Questions
+1. get_requirements()
+2. calculate_payroll()
+3. print_pay()
+4. Run payroll calculator through jupyter
+5. Questions Chs(3, 4)
 
 
 #### README.md file should include the following items:
 
-* Screenshot(s) of Mortality Data running in jupyter lab
+* Screenshot(s) of Payroll Calculator running in jupyter lab
 * Link to a2 .ipynb file [a2.ipynb](a2.ipynb "A2 jupyter lab")
 
 #### Assignment Screenshots:
 
+### No Overtime
+
+![no ot](fp_no_overtime.PNG)
+
+### With Overtime
+
+![over](overtime.PNG)
+
 ### Screenshots of A2 running in Jupyter Lab
 
-![A2 Picture One](img2/a2_mortdata_p1.PNG)
+![p1](p1.PNG)
 
-![A2 Picture Two](img2/a2_mortdata_p2.PNG)
+![p2](p2.PNG)
 
-![A2 Picture Three](img2/a2_mortdata_p3.PNG)
+![p3](p3.PNG)
 
-![A2 Picture Four](img2/a2_mortdata_p4.PNG)
+### Skillsets
 
-![A2 Picture Five](img2/a2_mortdata_p5.PNG)
+Skill Set 1            | Skill Set 2            | Skill Set 3            |
+---------------------- | ---------------------- | ---------------------- |
+![s1](s1.PNG) | ![](s2.PNG)
 
-![A2 Picture Six](img2/a2_mortdata_p6.PNG)
 
-![A2 Picture Seven](img2/a2_mortdata_p7.PNG)
 
-![A2 Picture Eight](img2/a2_mortdata_p8.PNG)
 
-![A2 Picture Nine](img2/a2_mortdata_p9.PNG)
-
-![A2 Picture Ten](img2/a2_mortdata_p10.PNG)
-
-![A2 Picture Eleven](img2/a2_mortdata_p11.PNG)
-
-![A2 Picture Twelve](img2/a2_mortdata_p12.PNG)
-
-![A2 Picture Thirtheen](img2/a2_mortdata_p13.PNG)

@@ -38,9 +38,10 @@
 
 ### Skillsets
 
+![s2](img/skill2.PNG)
 Skill Set 1            | Skill Set 2            | Skill Set 3            |
 ---------------------- | ---------------------- | ---------------------- |
-![s1](s1.PNG) | ![](s2.PNG)
+![s1](s1.PNG) | ![s2](img/skill2.PNG) | ![s3](img/s3.png) |
 
 
 

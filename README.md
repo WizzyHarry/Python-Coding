@@ -17,6 +17,12 @@
     - Answer questions (Chs. 1, 2)
 
 2. [A2 README.md](a2/README.md "Keiths A2 README.md file")
+    - Create/code Payroll Calculator
+    - get_requirements()
+    - calculate_payroll()
+    - print_pay()
+    - Use calculator in Jupyter Labs
+    - Answer questions (Chs. 3, 4)
 
 
 3. [A3 README.md](a3/README.md "Keiths A3 README.md file")

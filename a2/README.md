@@ -41,8 +41,10 @@
 
 Skill Set 1            | Skill Set 2            | Skill Set 3            |
 ---------------------- | ---------------------- | ---------------------- |
-![s1](s1.PNG)          | ![s2](img/skill2.PNG)  | ![s3](img/s3.png)      |
+![s1](img/skill1.PNG)  | ![s2](img/skill2.PNG)  | ![s3](img/s3.png)      |
 
 
-
+* Link to skillset_1 functions [SkillSet1Func](../skillsets/s1_functions.py)
+* Link to skillset_2 functions [SkillSet2Func](../skillsets/s2_functions.py)
+* Link to skillset_3 functions [SkillSet3Func](../skillsets/s3_functions.py)
 

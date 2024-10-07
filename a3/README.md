@@ -12,7 +12,7 @@
 4. estimate_painting_cost()
 5. print_painting_estimate()
 6. print_painting_percentage()
-7. Questions Chs.(6, 7)
+7. Questions Ch(6)
 8. Skillsets 
 
 
@@ -51,7 +51,7 @@
 
 Skill Set 4            | Skill Set 5            | Skill Set 6            |
 ---------------------- | ---------------------- | ---------------------- |
-![s4](img/s4.PNG)  | ![s5](img/s5.PNG)  | ![s6](img/s6.png)      |
+![s4](img/s4.PNG)      | ![s5](img/s5.PNG)      | ![s6](img/s6.png)      |
 
 
 * Link to skillset_4 functions [s4](s4_functions.py)

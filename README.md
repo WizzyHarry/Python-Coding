@@ -26,6 +26,13 @@
 
 
 3. [A3 README.md](a3/README.md "Keiths A3 README.md file")
+    - Create conda environment (testenv)
+    - Import packages for environment
+    - get_user_input()
+    - estimate_painting_cost()
+    - print_painting_estimate()
+    - print_painting_percentage()
+    - Answer questions (Ch 6)
 
 
 4. [A4 README.md](a4/README.md "Keiths A4 README.md file")

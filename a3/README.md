@@ -8,35 +8,34 @@
 
 1. Create conda environment
 2. Import necessary packages
-3. estimate_painting_cost()
-4. print_painting_estimate()
-5. print_painting_percentage()
-6. Questions Chs.(6, 7)
-7. Skillsets 
+3. get_user_input()
+4. estimate_painting_cost()
+5. print_painting_estimate()
+6. print_painting_percentage()
+7. Questions Chs.(6, 7)
+8. Skillsets 
 
 
 #### README.md file should include the following items:
 
-* Screenshot(s) of Payroll Calculator running in jupyter lab
-* Link to a2 .ipynb file [a2.ipynb](a2.ipynb "A2 jupyter lab")
+* Screenshot(s) of Paint Estimator running in jupyter lab
+* Link to a3 .ipynb file [a3](a3.ipynb)
+* Link to estimator main [main.py](paint_main.py)
+* Link to estimator functions [functions.py](paint_functions.py)
 
 #### Assignment Screenshots:
 
-### No Overtime
+![vs_p1](a3_p1.PNG)
 
-![no ot](fp_no_overtime.PNG)
+![vs_p2](a3_p2.PNG)
 
-### With Overtime
+### Screenshots of A3 running in Jupyter Lab
 
-![over](overtime.PNG)
+![p1](a3_p3.PNG)
 
-### Screenshots of A2 running in Jupyter Lab
+![p2](a3_p4.PNG)
 
-![p1](p1.PNG)
-
-![p2](p2.PNG)
-
-![p3](p3.PNG)
+![p3](a3_p5.PNG)
 
 ### Conda environments & packages
 

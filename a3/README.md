@@ -51,7 +51,7 @@
 
 Skill Set 4            | Skill Set 5            | Skill Set 6            |
 ---------------------- | ---------------------- | ---------------------- |
-![s4](img/s4.PNG)      |   ![s5](img/s5.PNG)    |   ![s6](img/s6.png)    |
+![s4](img/s4.PNG)      |   ![s5](img/s5.PNG)    |   ![s6](s6.PNG)        |
 
 
 * Link to skillset_4 functions [s4](s4_functions.py)

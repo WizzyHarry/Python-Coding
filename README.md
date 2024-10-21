@@ -36,6 +36,11 @@
 
 
 4. [A4 README.md](a4/README.md "Keiths A4 README.md file")
+    - Understand and utilize pandas-datareader
+    - Create display commands in data_analysis func
+    - Display graph through Jupyter Lab & VSCode
+    - Lists, Tuples, Sets
+    - Answer questions (Chs. 7, 8)
 
 
 5. [A5 README.md](a5/README.md "Keiths A5 README.md file")

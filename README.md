@@ -24,7 +24,6 @@
     - Use calculator in Jupyter Labs
     - Answer questions (Chs. 3, 4)
 
-
 3. [A3 README.md](a3/README.md "Keiths A3 README.md file")
     - Create conda environment (testenv)
     - Import packages for environment
@@ -34,9 +33,12 @@
     - print_painting_percentage()
     - Answer questions (Ch 6)
 
-
 4. [A4 README.md](a4/README.md "Keiths A4 README.md file")
-
+    - Import packages for data reading
+    - Read URL using pandas
+    - Display data outputs (data_analysis)
+    - Skillsets
+    - Answer questions (Chs. 9, 10)
 
 5. [A5 README.md](a5/README.md "Keiths A5 README.md file")
 
@@ -47,6 +49,5 @@
     - Display graph through Jupyter Lab & VSCode
     - Lists, Tuples, Sets
     - Answer questions (Chs. 7, 8)
-
 
 7. [P2 README.md](p2/README.md "Keiths P2 README.md file")

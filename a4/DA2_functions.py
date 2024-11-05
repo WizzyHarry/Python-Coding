@@ -42,7 +42,7 @@ def data_analysis_2():
     print("\n3. Print columns (another way):")
     print(df.columns[:])
 
-    print("\n3a. Print columns (slicing notation, using all three options):")
+    # print("\n3a. Print columns (slicing notation, using all three options):")
     # print(df.columns[0:7:1]) # slicing
 
     print("\n4. Print (all) values, in array format:")
@@ -174,9 +174,9 @@ def data_analysis_2():
 
 
     print("\n32. Find all passengers with name 'Allison' (using regular expressions):")
-
-    # for name in names:
-    #    print(re.search(r'(Allison)', name))
+    for name in names:
+        if re.search(r'(Allison)', name):
+            print(f"{name}: Found match")
 
 
     print("\n***33. Statistical Analysis (DataFrame notation):***")
@@ -225,4 +225,8 @@ def data_analysis_2():
     print(count)
 
     print("\n***Graph: Display ages of the first 20 passengers:")
-    print(df[20:])    
+    print(df["Age"].head(20))
+    style.use('ggplot')
+    (df["Age"].head(20)).plot()
+    plt.legend()
+    plt.show()    

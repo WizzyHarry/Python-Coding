@@ -41,7 +41,12 @@
     - Answer questions (Chs. 9, 10)
 
 5. [A5 README.md](a5/README.md "Keiths A5 README.md file")
-
+    - Install R and RStudio
+    - Go through the R tutorial
+    - Utilize R to parse Titanic data
+    - Generate Graphs
+    - Python skillsets
+    - Answer questions (Chs. 11, 12) 
 
 6. [P1 README.md](p1/README.md "Keiths P1 README.md file")
     - Understand and utilize pandas-datareader

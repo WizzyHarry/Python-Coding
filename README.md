@@ -56,3 +56,9 @@
     - Answer questions (Chs. 7, 8)
 
 7. [P2 README.md](p2/README.md "Keiths P2 README.md file")
+    - Read git .csv file
+    - Execute display commands using R
+    - Library packages ggplot2 & dplyr
+    - Generate graphs
+    - Questions (History of R)
+

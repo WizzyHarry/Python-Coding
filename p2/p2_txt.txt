@@ -1,0 +1,293 @@
+> 
+> setwd("C:/Users/sirsh/repos/lis4369/p2")
+> 
+> url = "http://vincentarelbundock.github.io/Rdatasets/csv/datasets/mtcars.csv"
+> mtcars <- read.csv(file=url,head=TRUE,sep=",")
+> 
+> mtcars 
+              rownames  mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1            Mazda RX4 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2        Mazda RX4 Wag 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+3           Datsun 710 22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+4       Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5    Hornet Sportabout 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6              Valiant 18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+7           Duster 360 14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+8            Merc 240D 24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+9             Merc 230 22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+10            Merc 280 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+11           Merc 280C 17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+12          Merc 450SE 16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+13          Merc 450SL 17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+14         Merc 450SLC 15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+15  Cadillac Fleetwood 10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+16 Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+17   Chrysler Imperial 14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+18            Fiat 128 32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+19         Honda Civic 30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+20      Toyota Corolla 33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+21       Toyota Corona 21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+22    Dodge Challenger 15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+23         AMC Javelin 15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+24          Camaro Z28 13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+25    Pontiac Firebird 19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+26           Fiat X1-9 27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+27       Porsche 914-2 26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+28        Lotus Europa 30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+29      Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+30        Ferrari Dino 19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+31       Maserati Bora 15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+32          Volvo 142E 21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+> head(mtcars, 10)
+            rownames  mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1          Mazda RX4 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2      Mazda RX4 Wag 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+3         Datsun 710 22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+4     Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5  Hornet Sportabout 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6            Valiant 18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+7         Duster 360 14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+8          Merc 240D 24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+9           Merc 230 22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+10          Merc 280 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+> tail(mtcars, 10)
+           rownames  mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+23      AMC Javelin 15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+24       Camaro Z28 13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+25 Pontiac Firebird 19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+26        Fiat X1-9 27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+27    Porsche 914-2 26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+28     Lotus Europa 30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+29   Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+30     Ferrari Dino 19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+31    Maserati Bora 15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+32       Volvo 142E 21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+> str(mtcars)
+'data.frame':	32 obs. of  12 variables:
+ $ rownames: chr  "Mazda RX4" "Mazda RX4 Wag" "Datsun 710" "Hornet 4 Drive" ...
+ $ mpg     : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+ $ cyl     : int  6 6 4 6 8 6 8 4 4 6 ...
+ $ disp    : num  160 160 108 258 360 ...
+ $ hp      : int  110 110 93 110 175 105 245 62 95 123 ...
+ $ drat    : num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+ $ wt      : num  2.62 2.88 2.32 3.21 3.44 ...
+ $ qsec    : num  16.5 17 18.6 19.4 17 ...
+ $ vs      : int  0 0 1 1 0 1 0 1 1 1 ...
+ $ am      : int  1 1 1 0 0 0 0 0 0 0 ...
+ $ gear    : int  4 4 4 3 3 3 3 4 4 4 ...
+ $ carb    : int  4 4 1 1 2 1 4 2 2 4 ...
+> names(mtcars)
+ [1] "rownames" "mpg"      "cyl"      "disp"     "hp"       "drat"     "wt"       "qsec"    
+ [9] "vs"       "am"       "gear"     "carb"    
+> head(mtcars, 1)
+   rownames mpg cyl disp  hp drat   wt  qsec vs am gear carb
+1 Mazda RX4  21   6  160 110  3.9 2.62 16.46  0  1    4    4
+> mtcars$mpg
+ [1] 21.0 21.0 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 17.8 16.4 17.3 15.2 10.4 10.4 14.7 32.4
+[19] 30.4 33.9 21.5 15.5 15.2 13.3 19.2 27.3 26.0 30.4 15.8 19.7 15.0 21.4
+> mtcars$cyl
+ [1] 6 6 4 6 8 6 8 4 4 6 6 8 8 8 8 8 8 4 4 4 4 8 8 8 8 4 4 4 8 6 8 4
+> mtcars[3,4]
+[1] 108
+> mtcars[mtcars$cyl>4]
+Error in `[.data.frame`(mtcars, mtcars$cyl > 4) : 
+  undefined columns selected
+> mtcars[mtcars$cyl>4,]
+              rownames  mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1            Mazda RX4 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2        Mazda RX4 Wag 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+4       Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5    Hornet Sportabout 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6              Valiant 18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+7           Duster 360 14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+10            Merc 280 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+11           Merc 280C 17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+12          Merc 450SE 16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+13          Merc 450SL 17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+14         Merc 450SLC 15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+15  Cadillac Fleetwood 10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+16 Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+17   Chrysler Imperial 14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+22    Dodge Challenger 15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+23         AMC Javelin 15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+24          Camaro Z28 13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+25    Pontiac Firebird 19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+29      Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+30        Ferrari Dino 19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+31       Maserati Bora 15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+> mtcars[mtcars$cyl>4 & mtcars$gear>4,]
+         rownames  mpg cyl disp  hp drat   wt qsec vs am gear carb
+29 Ford Pantera L 15.8   8  351 264 4.22 3.17 14.5  0  1    5    4
+30   Ferrari Dino 19.7   6  145 175 3.62 2.77 15.5  0  1    5    6
+31  Maserati Bora 15.0   8  301 335 3.54 3.57 14.6  0  1    5    8
+> mtcars[mtcars$cyl>4 | mtcars$gear=4,]
+Error: unexpected '=' in "mtcars[mtcars$cyl>4 | mtcars$gear="
+> mtcars[mtcars$cyl>4 & mtcars$gear==4,]
+        rownames  mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1      Mazda RX4 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2  Mazda RX4 Wag 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+10      Merc 280 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+11     Merc 280C 17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+> mtcars[mtcars$cyl>4 | mtcars$gear==4,]
+              rownames  mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1            Mazda RX4 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2        Mazda RX4 Wag 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+3           Datsun 710 22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+4       Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5    Hornet Sportabout 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6              Valiant 18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+7           Duster 360 14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+8            Merc 240D 24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2
+9             Merc 230 22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2
+10            Merc 280 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+11           Merc 280C 17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+12          Merc 450SE 16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+13          Merc 450SL 17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+14         Merc 450SLC 15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+15  Cadillac Fleetwood 10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+16 Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+17   Chrysler Imperial 14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+18            Fiat 128 32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1
+19         Honda Civic 30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2
+20      Toyota Corolla 33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1
+22    Dodge Challenger 15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+23         AMC Javelin 15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+24          Camaro Z28 13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+25    Pontiac Firebird 19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+26           Fiat X1-9 27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1
+29      Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+30        Ferrari Dino 19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+31       Maserati Bora 15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+32          Volvo 142E 21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2
+> mtcars[mtcars$cyl>4 | !mtcars$gear==4,]
+              rownames  mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+1            Mazda RX4 21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+2        Mazda RX4 Wag 21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+4       Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5    Hornet Sportabout 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6              Valiant 18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+7           Duster 360 14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+10            Merc 280 19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4
+11           Merc 280C 17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4
+12          Merc 450SE 16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+13          Merc 450SL 17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+14         Merc 450SLC 15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+15  Cadillac Fleetwood 10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+16 Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+17   Chrysler Imperial 14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+21       Toyota Corona 21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1
+22    Dodge Challenger 15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+23         AMC Javelin 15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+24          Camaro Z28 13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+25    Pontiac Firebird 19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+27       Porsche 914-2 26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2
+28        Lotus Europa 30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2
+29      Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+30        Ferrari Dino 19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+31       Maserati Bora 15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+> mtcars[mtcars$cyl>4 & !mtcars$gear==4,]
+              rownames  mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+4       Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+5    Hornet Sportabout 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+6              Valiant 18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+7           Duster 360 14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+12          Merc 450SE 16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3
+13          Merc 450SL 17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3
+14         Merc 450SLC 15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3
+15  Cadillac Fleetwood 10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4
+16 Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4
+17   Chrysler Imperial 14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4
+22    Dodge Challenger 15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2
+23         AMC Javelin 15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2
+24          Camaro Z28 13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4
+25    Pontiac Firebird 19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2
+29      Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4
+30        Ferrari Dino 19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6
+31       Maserati Bora 15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8
+> ncol(mtcars)
+[1] 12
+> 
+> # num rows
+> nrow(mtcars)
+[1] 32
+> dim(mtcars)
+[1] 32 12
+> summary(mtcars$hp, na.rm=TRUE)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   52.0    96.5   123.0   146.7   180.0   335.0 
+> var(mtcars$hp, na.rm=TRUE)
+[1] 4700.867
+> sd(mtcars$hp, na.rm=TRUE)
+[1] 68.56287
+> library(ggplot2)
+> qplot(disp, mpg, ylim=c(0,35), data=mtcars)
+Warning message:
+`qplot()` was deprecated in ggplot2 3.4.0.
+This warning is displayed once every 8 hours.
+Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated. 
+> qplot(hp, mpg, ylim=c(0,35), data=mtcars)
+> qplot(hp, mpg, ylim=c(0,35), data=mtcars) +
++   ggtitle("Keith Faunce")
+> avg_mpg <- mtcars %>%
++   group_by(cyl) %>%
++   summarize(avg_mpg = mean(mpg))
+Error in mtcars %>% group_by(cyl) %>% summarize(avg_mpg = mean(mpg)) : 
+  could not find function "%>%"
+> install.packages("dplyr")
+WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+Installing package into ‘C:/Users/sirsh/AppData/Local/R/win-library/4.4’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘generics’, ‘tidyselect’
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/generics_0.1.3.zip'
+Content type 'application/zip' length 85155 bytes (83 KB)
+downloaded 83 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/tidyselect_1.2.1.zip'
+Content type 'application/zip' length 229100 bytes (223 KB)
+downloaded 223 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.4/dplyr_1.1.4.zip'
+Content type 'application/zip' length 1588737 bytes (1.5 MB)
+downloaded 1.5 MB
+
+package ‘generics’ successfully unpacked and MD5 sums checked
+package ‘tidyselect’ successfully unpacked and MD5 sums checked
+package ‘dplyr’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\sirsh\AppData\Local\Temp\RtmpiI5u1b\downloaded_packages
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:ggplot2’:
+
+    vars
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+> avg_mpg <- mtcars %>%
++   group_by(cyl) %>%
++   summarize(avg_mpg = mean(mpg))
+> mycolors <- heat.colors(3)
+> ggplot(avg_mpg, aes(x = factor(cyl), y = avg_mpg)) +
++   geom_col(fill = mycolors) +
++   ggtitle("Avg MPG per Cyl | Keith Faunce") +
++   xlab("Number of cylinders") +
++   ylab("Avg MPG")
+> mycolors <- rev(heat.colors(3))
+> ggplot(avg_mpg, aes(x = factor(cyl), y = avg_mpg)) +
++   geom_col(fill = mycolors) +
++   ggtitle("Avg MPG per Cyl | Keith Faunce") +
++   xlab("Number of cylinders") +
++   ylab("Avg MPG")
+> sink("p2_txt.txt")

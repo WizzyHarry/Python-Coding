@@ -63,7 +63,11 @@ library(ggplot2)
 qplot(hp, mpg, ylim=c(0,35), data=mtcars) +
   ggtitle("Keith Faunce")
 
+<<<<<<< HEAD
 # install.packages("dplyr")
+=======
+install.packages("dplyr")
+>>>>>>> af921d99ec74f4aed103dea752ff3ceb5b1a26be
 library(dplyr)
 
 # normal plot (ggplot)
